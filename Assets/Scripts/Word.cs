@@ -5,19 +5,19 @@
 public class Word
 {
     public int ID { get; set; }
-    public string Russian { get; set; }
+    public string Rusian { get; set; }
     public string Belarusian { get; set; }
     public string Ukrainian { get; set; }
     public string OldSlavonic { get; set; }
-    public string OldRussian { get; set; }
+    public string OldRusian { get; set; }
 
     public Word() {}
 
-    public Word(string russian = "-", string belarusian = "-", string ukrainian = "-", string oldSlavonic = "-", string oldRussian = "-")
+    public Word(string rusian = "-", string belarusian = "-", string ukrainian = "-", string oldSlavonic = "-", string oldRusian = "-")
     {
-        if (!string.IsNullOrWhiteSpace(russian))
+        if (!string.IsNullOrWhiteSpace(rusian))
         {
-            Russian = russian.ToLower();
+            Rusian = rusian.ToLower();
         }
         if (!string.IsNullOrWhiteSpace(belarusian))
         {
@@ -31,14 +31,14 @@ public class Word
         {
             OldSlavonic = oldSlavonic.ToLower();
         }
-        if (!string.IsNullOrWhiteSpace(oldRussian))
+        if (!string.IsNullOrWhiteSpace(oldRusian))
         {
-            OldRussian = oldRussian.ToLower();
+            OldRusian = oldRusian.ToLower();
         }
     }
 
     public override string ToString()
     {
-        return Russian;
+        return Rusian;
     }
 }

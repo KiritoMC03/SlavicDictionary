@@ -55,11 +55,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Manuscript SDF
+  m_Name: Manuscript_SDF
   m_EditorClassIdentifier: 
-  hashCode: 1324863817
+  hashCode: 1323270358
   material: {fileID: 7218918065876997118}
-  materialHashCode: -1741485623
+  materialHashCode: 1944130870
   m_Version: 1.1.0
   m_SourceFontFileGUID: 9ab0266029d915b4fbc40dbe760bf282
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: 9ab0266029d915b4fbc40dbe760bf282, type: 3}

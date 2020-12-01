@@ -158,11 +158,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: Bookvica SDF
+  m_Name: Bookvica
   m_EditorClassIdentifier: 
-  hashCode: 1173010181
+  hashCode: -563205964
   material: {fileID: -4220617155252835549}
-  materialHashCode: 2002081157
+  materialHashCode: -1806216940
   m_Version: 1.1.0
   m_SourceFontFileGUID: cdae85bf306291d499f55a27eeb109d3
   m_SourceFontFile_EditorRef: {fileID: 12800000, guid: cdae85bf306291d499f55a27eeb109d3, type: 3}
