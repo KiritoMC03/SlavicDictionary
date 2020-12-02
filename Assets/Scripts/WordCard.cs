@@ -15,7 +15,7 @@ public class WordCard : MonoBehaviour
 
     public void SetIdAndTranslates(Word word)
     {
-        ID.text = "№ " + word.ID;
+        ID.text = "№ " + (word.ID + 1);
 
         if (Translates != null)
         {

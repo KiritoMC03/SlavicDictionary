@@ -26,8 +26,6 @@ public class FindWord : MonoBehaviour
     public void ShowThisWordCard()
     {
         _dictionaryHandler = GameObject.FindGameObjectWithTag("DictionaryHandler");
-        Debug.Log(_dictionaryHandler.activeInHierarchy);
-        Debug.Log(_dictionaryHandler);
 
         if (_dictionaryHandler != null && _word != null)
         {

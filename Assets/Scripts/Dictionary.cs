@@ -66,13 +66,12 @@ public class Dictionary : MonoBehaviour
         EnableGeneralCanvas(true);
 
         Load();
-        Debug.Log(words.Count);
         CreateWordCard(_thisWordId);
     }
 
     public void Save(bool isGeneral)
     {
-        using (var file = new StreamWriter("words.xml", true, Encoding.UTF8))
+        using (var file = new StreamWriter("words.xml", true, Encoding.Unicode))
         {
             if (isGeneral)
             {
@@ -89,7 +88,7 @@ public class Dictionary : MonoBehaviour
 
     public void Load()
     {
-        using (var file = new StreamReader("words.xml", Encoding.UTF8))
+        using (var file = new StreamReader("words.xml", Encoding.Unicode))
         {
             var newWords = serializer.Deserialize(file) as List<Word>;
             
@@ -127,7 +126,6 @@ public class Dictionary : MonoBehaviour
             for (int i = 0; i < container.childCount; i++)
             {
                 Destroy(container.GetChild(i).gameObject);
-                Debug.Log("CLEAR!");
             }
         }
     }
@@ -141,19 +139,17 @@ public class Dictionary : MonoBehaviour
             return;
         }
         CreateWordCard(_thisWordId + 1);
-        _thisWordId++;
         return;
     }
     public void ShowPreviousWord()
     {
         if (_thisWordId == 0)
         {
-            _thisWordId = words.Count;
+            _thisWordId = words.Count-1;
             CreateWordCard(_thisWordId);
             return;
         }
         CreateWordCard(_thisWordId - 1);
-        _thisWordId--;
         return;
     }
 
